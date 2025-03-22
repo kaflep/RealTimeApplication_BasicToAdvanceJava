@@ -1,0 +1,34 @@
+##############################################
+Collection :
+1.collection is a groups of objects, it is single entity which is representing multiple objects.
+2. collection provides a way to work with groups of elements in a unified manner, allowing developers to easily
+add, remove, search, and manipulate elements without having to worry about low-level details of data storage and retrieval.
+
+###############################
+collection Framework/API:
+===>>>1.It is group of implementation classes and interfaces that are used to store, manage, manipulate groups of objects.
+2. collection introduced in 1.2 v
+3. it is inside java.util package
+
+####################################
+why do we need collection framework/ api
+1. what if declaring ten thousand variable ---> readability issue
+2. move to the Array( we can use huge # of values in single variable) but there is limitations 1.---> fixed in size,
+2---> can hold only homogenous datatype element (same type of data) Student[] s = new Student[1000]; let's say
+s[0] = new Student();(valid) but s[1] = new Customer();(not valid)
+ but there is solution is use for heterogeneous data type
+ Object[] a = new Object[1000]; s[0] = new Student();(valid), s[1] = new Customer();(valid)
+ 3---> there is no data structure underlying inside array, ready-mate method support we can not except,
+  we have to do by ourselves (like add, sort, remove etc).
+  **** so, go with collections : 1----> growable in nature(dynamic size()) 2---> hold homogenous and heterogeneous object
+  3---> every collection is based on some standard data structure,ready mate method support available for every requirement.
+
+##################################################
+Map is the part of collection framework  not collection interface why?
+ collection interface methods like add(), remove(), size() deals with individual elements.
+ map is works with keys and values which is different data structure, but it is part of collection api because it
+  provides a fundamental data structure for storing and managing data.
+
+
+################################################
+why do we need Collections Class even if we have collection interface ??
