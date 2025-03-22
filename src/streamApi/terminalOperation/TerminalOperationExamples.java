@@ -49,6 +49,7 @@ public class TerminalOperationExamples {
         /*
             3. reduce(BinaryOperation<T> accumulator) ---> it does reduction on the element of the stream perform
             associative aggregation function(2 element take do add, mult, sub, and so on and return 1 element)
+             so it takes 2 parameter and return 1 .
          */
 
     }
