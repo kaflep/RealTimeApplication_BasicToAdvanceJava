@@ -13,6 +13,7 @@ class A {
     // reference to the current object  return this
     // if I use new A(), it goes to the constructor and refers to the new object
     A get(){
+
         return this;
     }
     public A(String name, int age){
