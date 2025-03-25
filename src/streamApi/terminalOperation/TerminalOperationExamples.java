@@ -10,13 +10,13 @@ public class TerminalOperationExamples {
         1. forEach(Consumer<T> action)  --- > perform action on each element of the stream and do not return any value
              same as peek but forEach is terminal operation
          */
-        List<Integer> numbers= Arrays.asList(2,1,4,7,10);
+        List<Integer> numbers = Arrays.asList(2, 1, 4, 7, 10);
 
         // 1. create/open stream
-         numbers.stream()
-                 //2. apply intermediate operation
-                .filter((Integer value)-> value >=3)
-                 // 3. apply terminal operation
+        numbers.stream()
+                //2. apply intermediate operation
+                .filter((Integer value) -> value >= 3)
+                // 3. apply terminal operation
                 .forEach((Integer value1) -> System.out.println(value1));
 
          /*
@@ -24,13 +24,13 @@ public class TerminalOperationExamples {
 
           */
 
-        List<Integer> numbersToArray= Arrays.asList(2,1,4,7,10);
+        List<Integer> numbersToArray = Arrays.asList(2, 1, 4, 7, 10);
 
         System.out.println("========  It will return Object array  =====================================");
         // 1. create/open stream
-         Object [] filteredNumberArrayType1=  numbers.stream()
+        Object[] filteredNumberArrayType1 = numbers.stream()
                 //2. apply intermediate operation
-                .filter((Integer value)-> value >=3)
+                .filter((Integer value) -> value >= 3)
                 // 3. apply terminal operation
                 .toArray();
         System.out.println(Arrays.toString(filteredNumberArrayType1));
@@ -39,7 +39,7 @@ public class TerminalOperationExamples {
         System.out.println("===== to specific  for  array (here is Integer), we can do String, Double, ans so on === ");
 
 
-        Integer [] filteredNumberArrType2 = numbers.stream()
+        Integer[] filteredNumberArrType2 = numbers.stream()
                 .filter((Integer value) -> value >= 3)
                 .toArray((int size) -> new Integer[size]);
 

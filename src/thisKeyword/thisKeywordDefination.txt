@@ -1,0 +1,36 @@
+##################################
+This Keyword Definition ::
+---> "this" keyword is a reference variable which refers or point to the current class object.
+1. this keyword only works on non-static member because this keyword belongs to an object so static belongs to class.
+2. this keyword is non-static member, so this keyword use inside non-static method only.
+
+######################################
+ Test t = new Test(); // creating object of test class
+ so,1. Test( current class)
+ 2. t (reference variable which refer or points to Test class object ) so job of t is to refer current object.
+3. this(reference variable which refer or points to current(Test) class object ) so job of "this" is to refer current object.
+ ** meaning t and this referring same object or doing same task. let's understand with code in "ThisAndTRefersSameObject"**
+
+#########################################
+Interview question:
+1. what is this keyword ?
+2. what is this keyword used in java?
+---> "this" keyword in java is used to refer the current
+instance or current object of the class.
+3. is it possible to assign reference to this?
+---> No, we can not assign any value to "this" because its always
+points to current object, and it is final reference in java.
+
+#######################################
+Every method has own stack frame !!!
+Each tread has own stack !!!
+In java, first Object Creation takes , second constructor get call, and third, method that call on that particular object.
+
+##########################################
+ Uses:
+ 1. this can be used to refer current class instance variables
+ 2. this can be used to invoke current class method (implicitly)
+ 3. this can be passed as an argument in the method call
+ 4.this can be used to return the current class instance from the method
+ 5. this() can be used to invoke current class constructor --> this() must be the first line of cons.
+ 6. this can be passed as argument in the constructor call.
